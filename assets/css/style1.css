@@ -1,0 +1,193 @@
+.nav-bar {
+    background-color: #2e2e2e;
+    overflow: hidden;
+    height: 100px; 
+}
+
+.background {
+    background: #eee;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.scroll{
+    color: black;
+    background-color: black;
+}
+
+.progress_bar {
+    width: 100%;
+}
+
+.rating_style {
+    font-size: 50px;
+    color: #ee278c;
+    font-family: 'Oswald', sans-serif;
+}
+
+.input {
+    background-color: #eee;
+    width: 250px;
+    margin-left: 20px;
+}
+
+.search_bar {
+    background-color: #eee;
+    position: relative;
+    top: 20px;
+    width: 300px;
+}
+
+.img_scroll {
+    width: 250px;
+    height: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.scroll {
+    color: white;
+}
+
+.game-title {
+    color: white;
+    font-family: 'Righteous', cursive;
+    position: absolute;
+    right: 80px;
+    top: 30px;
+}
+
+h2 {
+    font-weight: 100;
+}
+
+h3 {
+     color: #2e2e2e; 
+     font-family: 'Oswald', sans-serif;
+}
+
+.reddit_posts {
+    width: 60%;
+    height: 300px;
+    margin-top: 50px; 
+    margin-right: 70px;  
+    overflow: auto;
+    background-color: white;
+}
+
+#embed-view {
+    margin-top: 40px;
+}
+
+.redditThread {
+    margin-bottom: 20px;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(247, 244, 244);
+    overflow: auto;
+}
+
+.redditLink {
+    color: rgb(38,237,234) !important;
+    font-family: 'Oswald', sans-serif;
+}
+
+.rating {
+    margin-top: 50px; 
+    height: 300px;
+    overflow: auto;
+    background-color: white;
+    font-family: 'Oswald', sans-serif;
+} 
+
+.recommendedGame {
+    float: left;
+    padding: 20px;
+    height: 200px;
+    width: 20%;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.recommended {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    background-color: white;
+    font-family: 'Oswald', sans-serif;
+    overflow: auto;
+}
+
+#recommendedGame0,
+#recommendedGame1,
+#recommendedGame2,
+#recommendedGame3,
+#recommendedGame4 {
+    margin-top: 0px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 980px) {
+    .game-title {
+        color: white;
+        font-family: 'Righteous', cursive;
+        position: absolute;
+        font-size: 30px;
+        right: 50px;
+        top: 35px;
+    }
+    .search_bar {
+        position: relative;
+        left: 30px;
+        width: 200px;
+    }
+    .input {
+        width: 160px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .search_bar {
+        position: relative;
+        left: -10px;
+        width: 150px;
+    }
+
+    .input {
+        width: 110px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .search_bar {
+        width: 100px;
+    }
+
+    .input {
+        width: 80px;
+    }
+    .page-header {
+        width: 0%;
+    }
+    .logo {
+        width: 100px;
+    }
+    .game-title {
+        position: absolute;
+        font-size: 30px;
+        right: 40px;
+        top: 30px;
+        width: 100px;
+    }
+}
+
+
+
+
+

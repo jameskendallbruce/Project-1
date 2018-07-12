@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blood Stream | Dashboard</title>
+
+    <!--Bootstrap CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/uikit-3.0.0-rc.6/css/uikit.min.css" />
+    <link rel="stylesheet" href="assets/css/uikit-3.0.0-rc.6/css/uikit-rtl.min.css" />
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="assets/css/style1.css">
+
+    <script src="assets/js/uikit.min.js"></script>
+    <script src="assets/javascript/js/uikit-icons.min.js"></script>
+    <script src="assets/javascript/js/uikit-icons.js"></script>
+    <script src="assets/javascript/js/uikit.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="assets/javascript/twitch.js"></script>
+    <script type="text/javascript" src="assets/javascript/reddit.js"></script>
+    <script type="text/javascript" src="assets/javascript/IGDB_rating.js"></script>
+    <script type="text/javascript" src="assets/javascript/IGDB_recommended.js"></script>
+    <script type="text/javascript" src="assets/javascript/main.js"></script>
+
+</head>
+
+<body>
+    <!-- Header Nav -->
+    <div class="text-center nav-bar">
+        <a href="index.html">
+            <img class="logo" src="assets/images/logo.png" alt="logo">
+        </a>
+        <div class="uk-margin">
+        </div>
+        <form class="uk-search uk-search-default search_bar text-center">
+            <input class="uk-search-input input" type="search" placeholder="Search...">
+            <button class="uk-search-icon-flip" uk-search-icon type="submit" value="submit" id="search_button1"></button>
+        </form>
+
+        <div class="page-header">
+            <script type="text/javascript">
+                var title = localStorage.getItem("key");
+                $(".page-header").html("<h1 class='game-title'>" + title.toLowerCase() + "</h1>");
+            </script>
+        </div>
+    </div>
+
+
+    <!--Main Content-->
+    <div class="background">
+        <div class="container">
+            <div class="row">
+                <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider>
+
+                    <ul id="embed-view" class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid"> 
+                
+                    </ul> 
+
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="uk-card uk-card-default uk-card-body col-sm-8 col-md-8 col-lg-8 reddit_posts">
+                    <h3 class="uk-card-title uk-heading-bullet">Top Reddit Posts</h3>
+                    <div id="reddit-content"></div>
+                </div>
+
+                <div class="uk-card uk-card-default uk-card-body col-sm-4 col-md-4 col-lg-4 rating">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="uk-card uk-card-default uk-card-body col-sm-12 col-md-12 col-lg-12 recommended">
+                    <h3 class="uk-card-title uk-heading-bullet">IGDB Recommended Games</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+
+
+</body>
+
+</html>

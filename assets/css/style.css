@@ -1,0 +1,67 @@
+/* Search bar CSS */
+.background {
+     height: 100vh; 
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search_bar {
+    background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 250px;
+    opacity: .2;
+} 
+
+ #search_button {
+    color: black;
+    border: none;
+    position: relative;
+    top: 15px;
+    width: 35px;
+}
+
+ .input::placeholder {
+    font-size: 35px;
+    color: black;
+} 
+
+input[type=text] {
+    width: 200px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;  
+    color: black;
+}
+
+input[type=text]:focus {
+    width: 80%;
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+    .search_bar {
+        position: relative;
+        bottom: 110px;
+        opacity: .2;
+        width: 280px;
+        height: 60px;
+    } 
+
+    .input::placeholder {
+        font-size: 30px;
+        position: relative;
+        bottom: 10px;
+    } 
+
+    #test_button {
+        width: 30px;
+    }
+}
+
+
